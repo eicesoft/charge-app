@@ -43,7 +43,7 @@
   ],
   "tabBar": {
     "color": "#a3a3a3",
-    "selectedColor": "#6f6f6f",
+    "selectedColor": "#dd524d",
     "midButton": {
       "iconPath": "/static/icon/add.png",
       "iconWidth": "38px",
@@ -53,7 +53,8 @@
     "list": [{
         "pagePath": "pages/index/index",
         "text": "明细",
-        "iconPath": "/static/icon/home.png"
+        "iconPath": "/static/icon/home.png",
+        "selectedIconPath": "/static/icon/home_active.png"
       },
       {
         "pagePath": "pages/report/report",
@@ -62,12 +63,15 @@
       },
       {
         "pagePath": "pages/discover/discover",
-        "text": "发现"
+        "text": "发现",
+        "iconPath": "/static/icon/discover.png",
+        "selectedIconPath": "/static/icon/report_active.png"
       },
       {
         "pagePath": "pages/personal/personal",
         "text": "我的",
-        "iconPath": "/static/icon/me.png"
+        "iconPath": "/static/icon/me.png",
+        "selectedIconPath": "/static/icon/me_active.png"
       }
     ]
   },

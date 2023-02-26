@@ -27,7 +27,7 @@
       />
     </view>
 
-    <view style="margin-top:100px">
+    <view style="margin-top:40px">
       <view class="record-group">
         <view class="record-title">
           <view>02月25日 星期六</view><view>支出: 78</view></view
