@@ -1,0 +1,17 @@
+{
+    "id": "select-month",
+    "name": "SelectMonth",
+    "version": "1.0.0",
+    "description": "选择年月份组件",
+    "keywords": [
+        "pick",
+        "年",
+        "月"
+    ],
+    "dcloudext": {
+        "category": [
+            "前端组件",
+            "通用组件"
+        ]
+    }
+}

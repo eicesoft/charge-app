@@ -1,1 +1,15 @@
 @import '@/uni_modules/uni-scss/variables.scss';
+
+$header_bg_color: #dd524d;
+$background-color: #fefefe;
+$text-color: #fefefe;
+
+.status_bar {
+  height: var(--status-bar-height);
+  width: 100%;
+  background-color: $header_bg_color;
+}
+
+.container {
+  font-size: 28rpx;
+}

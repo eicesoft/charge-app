@@ -2,39 +2,63 @@
   "pages": [{
       "path": "pages/index/index",
       "style": {
-        "navigationBarTitleText": "uni-app"
+        "app-plus": {
+          "titleNView": {
+            "type": "transparent" //透明渐变导航栏 App-nvue 2.4.4+ 支持
+          }
+        }
       }
-    }, {
+    },
+    {
       "path": "pages/report/report",
       "style": {
-        "navigationBarTitleText": "",
-        "enablePullDownRefresh": false
+        "app-plus": {
+          "titleNView": {
+            "type": "transparent" //透明渐变导航栏 App-nvue 2.4.4+ 支持
+          }
+        }
       }
     },
     {
       "path": "pages/discover/discover",
       "style": {
-        "navigationBarTitleText": "",
-        "enablePullDownRefresh": false
+        "app-plus": {
+          "titleNView": {
+            "type": "transparent" //透明渐变导航栏 App-nvue 2.4.4+ 支持
+          }
+        }
       }
     },
     {
       "path": "pages/personal/personal",
       "style": {
-        "navigationBarTitleText": "",
-        "enablePullDownRefresh": false
+        "app-plus": {
+          "titleNView": {
+            "type": "transparent" //透明渐变导航栏 App-nvue 2.4.4+ 支持
+          }
+        }
       }
     }
 
   ],
   "tabBar": {
+    "color": "#a3a3a3",
+    "selectedColor": "#6f6f6f",
+    "midButton": {
+      "iconPath": "/static/icon/add.png",
+      "iconWidth": "38px",
+      "width": "32px",
+      "height": "60px"
+    },
     "list": [{
         "pagePath": "pages/index/index",
-        "text": "记账"
+        "text": "明细",
+        "iconPath": "/static/icon/home.png"
       },
       {
         "pagePath": "pages/report/report",
-        "text": "报表"
+        "text": "图表",
+        "iconPath": "/static/icon/report.png"
       },
       {
         "pagePath": "pages/discover/discover",
@@ -42,18 +66,21 @@
       },
       {
         "pagePath": "pages/personal/personal",
-        "text": "个人中心"
-
+        "text": "我的",
+        "iconPath": "/static/icon/me.png"
       }
     ]
   },
   "globalStyle": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8",
+    "navigationStyle": "custom",
+    "navigationBarTitleText": "",
+    "transparentTitle": "none",
+    "navigationBarBackgroundColor": "#fefefe",
+    "backgroundColor": "#fefefe",
     "app-plus": {
-      "background": "#efeff4"
+      "background": "#fefefe",
+      "popGesture": "close"
     }
   }
 }
