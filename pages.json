@@ -4,7 +4,8 @@
       "style": {
         "app-plus": {
           "titleNView": {
-            "type": "transparent" //透明渐变导航栏 App-nvue 2.4.4+ 支持
+            "type": "transparent",
+            "bounce": "none"
           }
         }
       }
@@ -14,7 +15,8 @@
       "style": {
         "app-plus": {
           "titleNView": {
-            "type": "transparent" //透明渐变导航栏 App-nvue 2.4.4+ 支持
+            "type": "transparent",
+            "bounce": "none"
           }
         }
       }
@@ -24,7 +26,8 @@
       "style": {
         "app-plus": {
           "titleNView": {
-            "type": "transparent" //透明渐变导航栏 App-nvue 2.4.4+ 支持
+            "type": "transparent",
+            "bounce": "none"
           }
         }
       }
@@ -34,7 +37,8 @@
       "style": {
         "app-plus": {
           "titleNView": {
-            "type": "transparent" //透明渐变导航栏 App-nvue 2.4.4+ 支持
+            "type": "transparent",
+            "bounce": "none"
           }
         }
       }

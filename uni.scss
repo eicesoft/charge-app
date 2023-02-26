@@ -4,6 +4,10 @@ $header_bg_color: #dd524d;
 $background-color: #fefefe;
 $text-color: #fefefe;
 
+page {
+  height: 100%;
+}
+
 .status_bar {
   height: var(--status-bar-height);
   width: 100%;

@@ -1,19 +1,10 @@
 <template>
-  <view style="height: 100%;">
-    <view style="height: 400rpx;"> xxxxxxxx</view>
-    <view style="background-color: #cccccc;">
-      <scroll-view
-        :scroll-top="scrollTop"
-        scroll-y="true"
-        class="scroll-Y"
-        @scrolltoupper="upper"
-        @scrolltolower="lower"
-        @scroll="scroll"
-      >
-        <view id="demo1" class="scroll-view-item uni-bg-red">A</view>
-        <view id="demo2" class="scroll-view-item uni-bg-green">B</view>
-        <view id="demo3" class="scroll-view-item uni-bg-blue">C</view>
-      </scroll-view>
+  <view class="container">
+    <view class="header">头部</view>
+    <view class="body">
+      <view class="item" v-for="index in count" :key="index">
+        <view class="item-top">测试数据的标题</view>
+      </view>
     </view>
   </view>
 </template>
@@ -22,51 +13,32 @@
 export default {
   data() {
     return {
-      scrollTop: 0,
-      old: {
-        scrollTop: 0,
-      },
+      count: 200,
     };
   },
-  methods: {
-    upper(e) {
-      console.log(e);
-    },
-    lower(e) {
-      console.log(e);
-    },
-    scroll(e) {
-      console.log(e);
-      this.old.scrollTop = e.detail.scrollTop;
-    },
-    goTop(e) {
-      this.scrollTop = this.old.scrollTop;
-      this.$nextTick(function() {
-        this.scrollTop = 0;
-      });
-      uni.showToast({
-        icon: 'none',
-        title: '纵向滚动 scrollTop 值已被修改为 0',
-      });
-    },
-  },
+  onLoad() {},
+  methods: {},
 };
 </script>
 
 <style lang="scss" scoped>
-.scroll-Y {
-  height: calc(100vh - 500rpx);
+.container {
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
-.scroll-view_H {
-  white-space: nowrap;
-  width: 100%;
+.header {
+  height: 200rpx;
+  background-color: $header_bg_color;
+  color: $text-color;
+  box-sizing: border-box;
 }
 
-.scroll-view-item {
-  height: 500rpx;
-  line-height: 500rpx;
-  text-align: center;
-  font-size: 36rpx;
+.body {
+  background: #ececec;
+  overflow: auto;
+  height: calc(100% - 200rpx);
 }
 </style>
