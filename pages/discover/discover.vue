@@ -1,4 +1,6 @@
 <template>
+  <view class="status_bar"></view>
+    
   <view class="container">
     <view class="header">头部</view>
     <view class="body">

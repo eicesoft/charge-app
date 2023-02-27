@@ -1,17 +1,30 @@
 <script>
+import { useStore } from 'vuex';
+
 export default {
-  onLaunch: function() {
-    console.log('App Launch');
-    uni.onTabBarMidButtonTap(() => {
-      console.log('test mid');
-    });
-  },
-  onShow: function() {
-    console.log('App Show');
-  },
-  onHide: function() {
-    console.log('App Hide');
-  },
+    onLaunch: function() {
+        console.log('App Launch');
+        const store = useStore();
+        store.dispatch('user/load_userinfo')
+        if (!store.getters.userinfo) {
+            console.log('Go to Login');
+            uni.navigateTo({
+                url: '/pages/login/login',
+            });
+        }
+        uni.onTabBarMidButtonTap(() => {
+            console.log('test mid');
+            uni.navigateTo({
+                url: '/pages/record/record',
+            });
+        });
+    },
+    onShow: function() {
+        console.log('App Show');
+    },
+    onHide: function() {
+        console.log('App Hide');
+    },
 };
 </script>
 
@@ -23,7 +36,7 @@ export default {
 
 // 设置整个项目的背景色
 page {
-  background-color: $background-color;
+    background-color: $background-color;
 }
 
 /* #endif */

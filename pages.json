@@ -1,5 +1,6 @@
 {
-  "pages": [{
+  "pages": [
+    {
       "path": "pages/index/index",
       "style": {
         "app-plus": {
@@ -42,8 +43,27 @@
           }
         }
       }
+    },
+    {
+      "path": "pages/login/login",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/record/record",
+      "style": {
+        "navigationBarTitleText": "记一笔",
+        "enablePullDownRefresh": false,
+        "app-plus": {
+            "bounce": "none",
+            "titleNView": {
+                "autoBackButton": true
+            }
+        }
+      }
     }
-
   ],
   "tabBar": {
     "color": "#a3a3a3",
@@ -54,7 +74,8 @@
       "width": "32px",
       "height": "60px"
     },
-    "list": [{
+    "list": [
+      {
         "pagePath": "pages/index/index",
         "text": "明细",
         "iconPath": "/static/icon/home.png",
@@ -84,6 +105,7 @@
     "navigationStyle": "custom",
     "navigationBarTitleText": "",
     "transparentTitle": "none",
+    "pageOrientation": "portrait",
     "navigationBarBackgroundColor": "#fefefe",
     "backgroundColor": "#fefefe",
     "app-plus": {
